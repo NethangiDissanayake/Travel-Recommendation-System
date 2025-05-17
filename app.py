@@ -7,12 +7,9 @@ st.title("🌍 Travel Recommendation System")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/Travel Dataset.csv")
+    return pd.read_csv("travel_recommendation_data.csv")
 
 data = load_data()
-
-# ✅ Show column names for debugging
-st.write("Columns in the dataset:", data.columns.tolist())
 
 # ✅ Create 'tags' column using available fields
 required_columns = ['Name', 'State', 'Zone', 'Type', 'Significance']
