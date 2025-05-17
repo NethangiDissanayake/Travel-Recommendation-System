@@ -7,7 +7,7 @@ st.title("🌍 Travel Recommendation System")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("travel_recommendation_data.csv")  # Make sure this file exists!
+    return pd.read_csv("data/Travel Dataset.csv")  # Make sure this file exists!
 
 data = load_data()
 
