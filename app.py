@@ -7,7 +7,7 @@ st.title("🌍 Travel Recommendation System")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("travel_recommendation_data.csv")
+    return pd.read_csv("data/Travel Dataset.csv")
 
 data = load_data()
 
