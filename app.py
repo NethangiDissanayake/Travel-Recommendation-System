@@ -10,6 +10,8 @@ def load_data():
     return pd.read_csv("data/Travel Dataset.csv")  # Make sure this file exists!
 
 data = load_data()
+st.write("Columns in the dataset:", data.columns.tolist())
+
 
 # Ensure tags column exists and has no NaNs
 data['tags'] = data['tags'].fillna('')
